@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+
+    <title>Website Guide</title>
+    <link rel="icon" href="tagfile.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="tagfile.ico" type="image/x-icon">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 600px;
+            overflow: hidden;
+            line-height: 1.8;
+            font-family: "Microsoft YaHei";
+            background: -webkit-gradient(linear, left top, left bottom);
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .search-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-form input[type="search"] {
+            width: 600px;
+            height: 45px;
+            padding: 10px;
+            font-size: 16px;
+            border: 3px solid #ccc;
+            border-radius: 20px;
+            margin-right: 0px;
+            box-shadow: none;
+            cursor: auto;
+            text-indent: 8px;
+        }
+
+        .search-form input[type="search"]:focus {
+            border-color: #ccc;
+            box-shadow: 0 0 10px #ccc;
+            outline: none;
+        }
+
+        .search-form button {
+            background-color: transparent;
+            color: #ccc;
+            padding: 10px 35px;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            font-size: 18px;
+            cursor: pointer;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .nav1 {
+            border: solid 3px #0066FF;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+        }
+
+        .nav1:hover {
+            box-shadow: 0 5px 30px #999;
+        }
+
+        .nav1 a {
+            float: left;
+            width: 140px;
+            margin-top: 15px;
+            margin-left: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #0066FF;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .nav1 a:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        .nav2 {
+            border: solid 3px #FF0000;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+        }
+
+        .nav2:hover {
+            box-shadow: 0 5px 30px #999;
+        }
+
+        .nav2 a {
+            float: left;
+            width: 140px;
+            margin-top: 15px;
+            margin-left: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #FF0000;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .nav2 a:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        .nav3 {
+            border: solid 3px #FFCC00;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+        }
+
+        .nav3:hover {
+            box-shadow: 0 5px 30px #999;
+        }
+
+        .nav3 a {
+            float: left;
+            width: 140px;
+            margin-top: 15px;
+            margin-left: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #FFCC00;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .nav3 a:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        .nav4 {
+            border: solid 3px #0066FF;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+        }
+
+        .nav4:hover {
+            box-shadow: 0 5px 30px #999;
+        }
+
+        .nav4 a {
+            float: left;
+            width: 140px;
+            margin-top: 15px;
+            margin-left: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #0066FF;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .nav4 a:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        .nav5 {
+            border: solid 3px #00CC33;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+        }
+
+        .nav5:hover {
+            box-shadow: 0 5px 30px #999;
+        }
+
+        .nav5 a {
+            float: left;
+            width: 140px;
+            margin-top: 15px;
+            margin-left: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #00CC33;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .nav5 a:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        .nav6 {
+            border: solid 3px #FF0000;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+        }
+
+        .nav6:hover {
+            box-shadow: 0 5px 30px #999;
+        }
+
+        .nav6 a {
+            float: left;
+            width: 140px;
+            margin-top: 15px;
+            margin-left: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #FF0000;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .nav6 a:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        .clear {
+            clear: both;
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div align="center">
+        <img src="google-kids.gif" alt="Google">
+    </div>
+
+    <div style="max-width:800px; margin:10px auto;">
+
+        <div class="container">
+            <div class="search-image">
+                <div class="search-form">
+                    <form action="https://www.google.com/search" method="get">
+                        <input type="search" id="search" name="q">
+                        <button type="submit">Google</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav1">
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <a href="https://scholar.google.com/" target="_blank">Google学术</a>
+            <a href="https://baidu.com/" target="_blank">百度一下</a>
+            <a href="https://fanyi.baidu.com/" target="_blank">百度翻译</a>
+            <a href="https://www.ali-exmail.cn/Land/" target="_blank">Ali-exMail</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav2">
+            <a href="http://sci-hub.st/" target="_blank">SCI-Hub</a>
+            <a href="https://zh.cppreference.com/" target="_blank">C++Reference</a>
+            <a href="https://cn.overleaf.com/" target="_blank">OverLeaf</a>
+            <a href="http://service.torouter.cc:11080/" target="_blank">NextCloud</a>
+            <a href="http://service.torouter.cc:16806/" target="_blank">思源笔记</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav3">
+            <a href="http://service.torouter.cc:10001/" target="_blank">Unriad</a>
+            <a href="http://service.torouter.cc:10002/" target="_blank">OpenWRT</a>
+            <a href="http://service.torouter.cc:10003/" target="_blank">iKuai</a>
+            <a href="http://10.10.10.251:9091/" target="_blank">Transmission</a>
+            <a href="http://10.10.10.251:1080/" target="_blank">NCloud-Local</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav4">
+            <a href="http://10.2.1.80/" target="_blank">OA</a>
+            <a href="http://10.2.1.190/" target="_blank">Ones</a>
+            <a href="https://mail.empyrean.com.cn/" target="_blank">Mail</a>
+            <a href="https://console-a2.huilianyi.com/main/dashboard/" target="_blank">汇联易</a>
+            <a href="https://empyrean.yunxuetang.cn/" target="_blank">九天E学</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav5">
+            <a href="https://gitee.com/" target="_blank">gitee</a>
+            <a href="https://open.163.com/" target="_blank">网易公开课</a>
+            <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+            <a href="https://m.douban.com/book/" target="_blank">豆瓣读书</a>
+            <a href="https://www.guancha.cn/" target="_blank">观察者网</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav6">
+            <a href="https://www.m-team.cc/" target="_blank">m-team</a>
+            <a href="https://www.freewhale.co/" target="_blank">FreeWhale</a>
+            <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+            <a href="https://www.onlinegdb.com/" target="_blank">GDBOnline</a>
+            <a href="https://www.guancha.cn/" target="_blank">租</a>
+            <div class="clear"></div>
+        </div>
+
+</body>
+
+</html>
