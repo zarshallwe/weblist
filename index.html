@@ -88,7 +88,151 @@
 
         .nav a {
             display: inline-block;
-            width: 100px;
+            width: 120px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: var(--color-primary);
+        }
+
+        .nav1 {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        .nav2 {
+            border-color: var(--color-secondary);
+            color: var(--color-secondary);
+        }
+
+        .nav3 {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+
+        .nav4 {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        .nav5 {
+            border-color: var(--color-success);
+            color: var(--color-success);
+        }
+
+        .nav6 {
+            border-color: var(--color-secondary);
+            color: var(--color-secondary);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav a {
+                width: 100%;
+                margin: 50px 0;
+            }
+
+            .search-form input[type="search"] {<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Website Guide</title>
+    <link rel="icon" href="tagfile.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="tagfile.ico" type="image/x-icon">
+
+    <style>
+        /* 全局样式 */
+        :root {
+            --color-primary: #0066FF;
+            --color-secondary: #FF0000;
+            --color-accent: #FFCC00;
+            --color-success: #00CC33;
+            --color-text: #333;
+            --color-background: #ffffff;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, var(--color-background), #ffffff);
+            color: var(--color-text);
+        }
+
+        .container {
+            text-align: center;
+            max-width: 768px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .search-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-form input[type="search"] {
+            width: 600px;
+            height: 45px;
+            padding: 10px;
+            font-size: 16px;
+            border: 3px solid #ccc;
+            border-radius: 20px;
+            margin-right: 0px;
+            box-shadow: none;
+            cursor: auto;
+            text-indent: 8px;
+        }
+
+        .search-form input[type="search"]:focus {
+            border-color: #ccc;
+            box-shadow: 0 0 10px #ccc;
+            outline: none;
+        }
+
+        .nav {
+            border: 2px solid;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            transition: all 0.3s ease;
+            padding: 10px;
+        }
+
+        .nav:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav a {
+            display: inline-block;
+            width: 120px;
             margin: 10px;
             text-align: center;
             text-decoration: none;
@@ -143,6 +287,95 @@
             }
 
             .search-form input[type="search"] {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div align="center">
+        <img src="google-kids.gif" alt="Google" style="max-width: 100%; height: auto;">
+    </div>
+
+    <div class="container">
+        <div class="search-image">
+            <div class="search-form">
+                <form id="searchForm" action="https://www.google.com/search" method="get" target="_blank">
+                    <input type="search" id="search" name="q" placeholder="输入关键词搜索...">
+                </form>
+            </div>
+        </div>
+
+        <div class="nav nav1">
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <a href="https://scholar.google.com/" target="_blank">Google学术</a>
+            <a href="https://baidu.com/" target="_blank">百度一下</a>
+            <a href="https://fanyi.baidu.com/" target="_blank">百度翻译</a>
+            <a href="https://wx.mail.qq.com/" target="_blank">Foxmail</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav nav2">
+            <a href="http://sci-hub.st/" target="_blank">SCI-Hub</a>
+            <a href="https://zh.cppreference.com/" target="_blank">C++Reference</a>
+            <a href="https://cn.overleaf.com/" target="_blank">OverLeaf</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav nav3">
+            <a href="http://unraid.server365.cc:10001/" target="_blank">Unraid</a>
+            <a href="http://10.10.10.251:9091/" target="_blank">Transmission</a>
+            <a href="http://unraid.server365.cc:16806/" target="_blank">思源笔记</a>
+            <a href="http://unraid.server365.cc:11080/" target="_blank">FileBrowser</a>
+            <a href="http://unraid.server365.cc:16812/" target="_blank">Typecho</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav nav4">
+            <a href="http://10.2.1.80/" target="_blank">OA</a>
+            <a href="http://10.2.1.190/" target="_blank">Ones</a>
+            <a href="https://mail.empyrean.com.cn/" target="_blank">Mail</a>
+            <a href="https://console-a2.huilianyi.com/main/dashboard/" target="_blank">汇联易</a>
+            <a href="https://empyrean.yunxuetang.cn/" target="_blank">九天E学</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav nav5">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://open.163.com/" target="_blank">网易公开课</a>
+            <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+            <a href="https://m.douban.com/book/" target="_blank">豆瓣读书</a>
+            <a href="https://www.guancha.cn/" target="_blank">观察者网</a>
+            <div class="clear"></div>
+        </div>
+
+        <div class="nav nav6">
+            <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+            <a href="http://unraid.server365.cc:13210/" target="_blank">DeepSeek-API</a>
+            <a href="https://www.onlinegdb.com/" target="_blank">GDBOnline</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('searchForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var query = document.getElementById('search').value.trim();
+                if (query !== '') {
+                    var url = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+                    window.open(url, '_blank');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
                 font-size: 14px;
             }
         }
