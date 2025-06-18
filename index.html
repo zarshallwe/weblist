@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="tagfile.ico" type="image/x-icon">
 
     <style>
-        /* 全局样式 */
         :root {
             --color-primary: #0066FF;
             --color-secondary: #FF0000;
@@ -28,7 +27,6 @@
             width: 100%;
             margin: 0;
             padding: 0;
-            font-family: "Microsoft YaHei", sans-serif;
             background: linear-gradient(135deg, var(--color-background), #ffffff);
             color: var(--color-text);
         }
@@ -51,10 +49,13 @@
             display: flex;
             align-items: center;
             position: relative;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .search-form input[type="search"] {
-            width: 600px;
+            width: 500px;
             height: 45px;
             padding: 10px;
             font-size: 16px;
@@ -135,7 +136,6 @@
             clear: both;
         }
 
-        /* 响应式设计 */
         @media (max-width: 768px) {
             .nav a {
                 width: 100%;
@@ -216,8 +216,8 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('searchForm').addEventListener('submit', function(event) {
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('searchForm').addEventListener('submit', function (event) {
                 event.preventDefault();
                 var query = document.getElementById('search').value.trim();
                 if (query !== '') {
