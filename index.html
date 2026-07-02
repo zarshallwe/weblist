@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Website Guide</title>
+  <link rel="icon" href="./tagfile.ico">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <form class="search" action="https://www.google.com/search" method="get" target="_blank">
+        <input name="q" type="search" placeholder="&#36755;&#20837;&#20851;&#38190;&#35789;&#25628;&#32034;..." autocomplete="off">
+        <button type="submit">&#25628;&#32034;</button>
+      </form>
+    </header>
+
+    <section id="groups" class="groups" aria-live="polite"></section>
+  </main>
+
+  <template id="group-template">
+    <section class="group">
+      <h2></h2>
+      <div class="cards"></div>
+    </section>
+  </template>
+
+  <template id="card-template">
+    <a class="card" target="_blank" rel="noopener noreferrer">
+      <img alt="" loading="lazy">
+      <span>
+        <strong></strong>
+        <small></small>
+      </span>
+    </a>
+  </template>
+
+  <script src="./assets/app.js" type="module"></script>
+</body>
+</html>
