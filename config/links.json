@@ -4,25 +4,70 @@
     {
       "title": "Server",
       "items": [
-        { "title": "Unraid", "description": "NAS dashboard", "url": "https://unraid.server365.cc:10443/", "icon": "./assets/icons/unraid.svg" },
-        { "title": "\u601d\u6e90\u7b14\u8bb0", "description": "Personal notes", "url": "https://siyuan.server365.cc:10443/", "icon": "./assets/icons/siyuan.svg" },
-        { "title": "FileBrowser", "description": "File management", "url": "https://fb.server365.cc:10443/", "icon": "./assets/icons/filebrowser.svg" },
-        { "title": "Gitea", "description": "Git service", "url": "https://gitea.server365.cc:10443/", "icon": "./assets/icons/gitea.svg" }
+        {
+          "title": "Unraid",
+          "description": "NAS dashboard",
+          "url": "https://unraid.server365.cc:10443/",
+          "icon": "./assets/icons/unraid.svg"
+        },
+        {
+          "title": "思源笔记",
+          "description": "Personal notes",
+          "url": "https://siyuan.server365.cc:10443/",
+          "icon": "./assets/icons/siyuan.svg"
+        },
+        {
+          "title": "FileBrowser",
+          "description": "File management",
+          "url": "https://fb.server365.cc:10443/",
+          "icon": "./assets/icons/filebrowser.svg"
+        },
+        {
+          "title": "Gitea",
+          "description": "Git service",
+          "url": "https://gitea.server365.cc:10443/",
+          "icon": "./assets/icons/gitea.svg"
+        }
       ]
     },
     {
       "title": "Work",
       "items": [
-        { "title": "OA", "description": "Office automation", "url": "http://10.2.1.80/", "icon": "./assets/icons/oa.svg" },
-        { "title": "Ones", "description": "Project management", "url": "http://10.2.1.190/", "icon": "./assets/icons/ones.svg" }
+        {
+          "title": "OA",
+          "description": "Office automation",
+          "url": "http://10.2.1.80/",
+          "icon": "./assets/icons/oa.svg"
+        },
+        {
+          "title": "Ones",
+          "description": "Project management",
+          "url": "http://10.2.1.190/",
+          "icon": "./assets/icons/ones.svg"
+        }
       ]
     },
     {
       "title": "AI",
       "items": [
-        { "title": "ChatGPT", "description": "OpenAI assistant", "url": "https://chat.openai.com/", "icon": "./assets/icons/chatgpt.svg" },
-        { "title": "Gemini", "description": "Google AI", "url": "https://gemini.google.com/", "icon": "./assets/icons/gemini.svg" },
-        { "title": "DeepSeek", "description": "Usage dashboard", "url": "https://platform.deepseek.com/usage", "icon": "./assets/icons/deepseek.svg" }
+        {
+          "title": "ChatGPT",
+          "description": "OpenAI assistant",
+          "url": "https://chat.openai.com/",
+          "icon": "./assets/icons/chatgpt.svg"
+        },
+        {
+          "title": "Gemini",
+          "description": "Google AI",
+          "url": "https://gemini.google.com/",
+          "icon": "./assets/icons/gemini.svg"
+        },
+        {
+          "title": "DeepSeek",
+          "description": "Usage dashboard",
+          "url": "https://platform.deepseek.com/usage",
+          "icon": "./assets/icons/deepseek.svg"
+        }
       ]
     }
   ]
