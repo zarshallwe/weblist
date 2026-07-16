@@ -57,6 +57,12 @@
           "icon": "./assets/icons/chatgpt.svg"
         },
         {
+          "title": "Codex",
+          "description": "Cloud analytics",
+          "url": "https://chatgpt.com/codex/cloud/settings/analytics",
+          "icon": "./assets/icons/codex.svg"
+        },
+        {
           "title": "Gemini",
           "description": "Google AI",
           "url": "https://gemini.google.com/",
