@@ -1,0 +1,53 @@
+name: 部署每日壁纸页面
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "20 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出镜像仓库
+        uses: actions/checkout@v4
+
+      - name: 下载 Bing 每日壁纸
+        run: python3 scripts/update-background.py
+
+      - name: 组装静态站点
+        run: |
+          mkdir _site
+          cp index.html tagfile.ico google-kids.gif _site/
+          cp -r assets config _site/
+
+      - name: 配置 GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传 Pages 构建产物
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
