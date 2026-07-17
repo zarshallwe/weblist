@@ -83,6 +83,7 @@ body {
 }
 
 .groups {
+  --grid-edge: calc((100% - 42px) / 40);
   display: grid;
   gap: 0;
   padding: 26px;
@@ -105,23 +106,36 @@ body {
   padding-top: 11px;
 }
 
+.group {
+  position: relative;
+}
+
 .group:not(:last-child) {
   padding-bottom: 11px;
-  border-bottom: 1px solid var(--line);
+}
+
+.group:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: var(--grid-edge);
+  bottom: 0;
+  left: var(--grid-edge);
+  height: 1px;
+  background: var(--line);
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
-  justify-items: stretch;
+  justify-items: center;
 }
 
 .card {
   display: flex;
   gap: 14px;
   align-items: center;
-  width: 100%;
+  width: 80%;
   min-height: 70px;
   padding: 13px 16px;
   border: 1px solid var(--line);
@@ -187,6 +201,7 @@ body {
   }
 
   .groups {
+    --grid-edge: calc((100% - 12px) / 20);
     padding: 20px;
   }
 }
@@ -207,6 +222,7 @@ body {
   }
 
   .groups {
+    --grid-edge: 0px;
     padding: 16px;
   }
 
