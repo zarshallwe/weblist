@@ -7,7 +7,10 @@ from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
 
-BING_API = "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN"
+BING_API = (
+    "https://www.bing.com/HPImageArchive.aspx"
+    "?format=js&idx=0&n=1&mkt=zh-CN&uhd=1&uhdwidth=3840&uhdheight=2160"
+)
 TARGET = Path(__file__).resolve().parents[1] / "assets" / "background.jpg"
 MAX_IMAGE_SIZE = 15 * 1024 * 1024
 

@@ -24,7 +24,7 @@ index.html              # Entry point — page shell, <template> elements, Googl
 assets/
   app.js                # Vanilla JS module: fetches config/links.json, clones templates, renders DOM
   styles.css            # THE single stylesheet — all CSS lives here, no separate files
-  background.png        # Background texture
+  background.jpg        # Tracked background; replaced temporarily during GitHub Pages builds
   icons/                # SVG icons for each link (referenced by links.json)
 config/
   links.json            # THE data file — all link groups and items live here
