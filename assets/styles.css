@@ -1,6 +1,6 @@
 :root {
   --panel: rgba(255, 255, 255, .62);
-  --groups-glass: rgba(255, 255, 255, .3);
+  --groups-glass: rgba(255, 255, 255, .42);
   --card: rgba(255, 255, 255, .52);
   --text: #171a20;
   --muted: #697386;
@@ -13,7 +13,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --panel: rgba(27, 31, 37, .7);
-    --groups-glass: rgba(27, 31, 37, .3);
+    --groups-glass: rgba(27, 31, 37, .42);
     --card: rgba(27, 31, 37, .58);
     --text: #f4f6f8;
     --muted: #a0a8b5;
@@ -86,12 +86,12 @@ body {
   display: grid;
   gap: 22px;
   padding: 26px;
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--line), white 18%);
   border-radius: 14px;
   background: var(--groups-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 18px 48px rgba(23, 26, 32, .2);
 }
 
 .group h2 {
