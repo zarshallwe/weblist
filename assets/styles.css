@@ -1,7 +1,7 @@
 :root {
-  --panel: rgba(255, 255, 255, .62);
-  --groups-glass: rgba(255, 255, 255, .42);
-  --card: rgba(255, 255, 255, .52);
+  --panel: rgba(255, 255, 255, .52);
+  --groups-glass: rgba(255, 255, 255, .32);
+  --card: rgba(255, 255, 255, .42);
   --text: #171a20;
   --muted: #697386;
   --line: rgba(255, 255, 255, .58);
@@ -12,9 +12,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --panel: rgba(27, 31, 37, .7);
-    --groups-glass: rgba(27, 31, 37, .42);
-    --card: rgba(27, 31, 37, .58);
+    --panel: rgba(27, 31, 37, .6);
+    --groups-glass: rgba(27, 31, 37, .32);
+    --card: rgba(27, 31, 37, .48);
     --text: #f4f6f8;
     --muted: #a0a8b5;
     --line: rgba(255, 255, 255, .14);
@@ -38,13 +38,13 @@ body {
 .shell {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 40px 0 56px;
+  padding: 80px 0 56px;
 }
 
 .hero {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 }
 
 .search {
