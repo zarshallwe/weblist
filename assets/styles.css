@@ -83,7 +83,6 @@ body {
 }
 
 .groups {
-  --grid-edge: calc((100% - 42px) / 40);
   display: grid;
   gap: 22px;
   padding: 26px;
@@ -110,8 +109,8 @@ body {
   content: "";
   position: absolute;
   top: -11px;
-  right: var(--grid-edge);
-  left: var(--grid-edge);
+  right: 0;
+  left: 0;
   height: 1px;
   background: var(--line);
   transform: translateY(-50%);
@@ -121,14 +120,14 @@ body {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
-  justify-items: center;
+  justify-items: stretch;
 }
 
 .card {
   display: flex;
   gap: 14px;
   align-items: center;
-  width: 80%;
+  width: 100%;
   min-height: 70px;
   padding: 13px 16px;
   border: 1px solid var(--line);
@@ -194,7 +193,6 @@ body {
   }
 
   .groups {
-    --grid-edge: calc((100% - 12px) / 20);
     padding: 20px;
   }
 }
@@ -215,7 +213,6 @@ body {
   }
 
   .groups {
-    --grid-edge: 0px;
     padding: 16px;
   }
 
