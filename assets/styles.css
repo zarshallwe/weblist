@@ -84,7 +84,7 @@ body {
 
 .groups {
   display: grid;
-  gap: 22px;
+  gap: 0;
   padding: 26px;
   border: 1px solid color-mix(in srgb, var(--line), white 18%);
   border-radius: 14px;
@@ -101,19 +101,13 @@ body {
   text-shadow: 0 1px 10px rgba(0, 0, 0, .3);
 }
 
-.group {
-  position: relative;
+.group:not(:first-child) {
+  padding-top: 11px;
 }
 
-.group:not(:first-child)::before {
-  content: "";
-  position: absolute;
-  top: -11px;
-  right: 0;
-  left: 0;
-  height: 1px;
-  background: var(--line);
-  transform: translateY(-50%);
+.group:not(:last-child) {
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--line);
 }
 
 .cards {
