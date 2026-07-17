@@ -1,5 +1,6 @@
 :root {
   --panel: rgba(255, 255, 255, .62);
+  --groups-glass: rgba(255, 255, 255, .3);
   --card: rgba(255, 255, 255, .52);
   --text: #171a20;
   --muted: #697386;
@@ -12,6 +13,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --panel: rgba(27, 31, 37, .7);
+    --groups-glass: rgba(27, 31, 37, .3);
     --card: rgba(27, 31, 37, .58);
     --text: #f4f6f8;
     --muted: #a0a8b5;
@@ -83,6 +85,13 @@ body {
 .groups {
   display: grid;
   gap: 22px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--groups-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
 }
 
 .group h2 {
@@ -174,6 +183,10 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
+
+  .groups {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -189,6 +202,10 @@ body {
   .cards {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .groups {
+    padding: 16px;
   }
 
   .card {
