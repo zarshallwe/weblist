@@ -86,7 +86,7 @@ body {
   --grid-edge: calc((100% - 42px) / 40);
   display: grid;
   gap: 0;
-  padding: 26px;
+  padding: 32px;
   border: 1px solid color-mix(in srgb, var(--line), white 18%);
   border-radius: 14px;
   background: var(--groups-glass);
@@ -95,15 +95,8 @@ body {
   box-shadow: 0 18px 48px rgba(23, 26, 32, .2);
 }
 
-.group h2 {
-  display: flex;
-  align-items: center;
-  margin: 0 0 10px;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, .3);
-}
-
 .group:not(:first-child) {
-  padding-top: 11px;
+  padding-top: 16px;
 }
 
 .group {
@@ -111,7 +104,7 @@ body {
 }
 
 .group:not(:last-child) {
-  padding-bottom: 11px;
+  padding-bottom: 16px;
 }
 
 .group:not(:last-child)::after {

@@ -32,7 +32,6 @@ function render(data) {
 
   data.groups.forEach((group) => {
     const groupNode = groupTemplate.content.cloneNode(true)
-    groupNode.querySelector('h2').setAttribute('aria-label', group.title)
     const cards = groupNode.querySelector('.cards')
 
     group.items.forEach((item) => {
