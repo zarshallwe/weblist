@@ -63,15 +63,9 @@
           "icon": "./assets/icons/codex.svg"
         },
         {
-          "title": "Gemini",
-          "description": "Google AI",
-          "url": "https://gemini.google.com/",
-          "icon": "./assets/icons/gemini.svg"
-        },
-        {
           "title": "DeepSeek",
-          "description": "Usage dashboard",
-          "url": "https://platform.deepseek.com/usage",
+          "description": "AI assistant",
+          "url": "https://chat.deepseek.com/",
           "icon": "./assets/icons/deepseek.svg"
         }
       ]
