@@ -72,7 +72,7 @@
           "title": "NiceAIGC",
           "description": "AIGC tools",
           "url": "https://niceaigc.net/",
-          "icon": "https://niceaigc.net/favicon.ico"
+          "icon": "./assets/icons/niceaigc.svg"
         }
       ]
     }
