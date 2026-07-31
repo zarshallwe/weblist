@@ -67,6 +67,12 @@
           "description": "AI assistant",
           "url": "https://chat.deepseek.com/",
           "icon": "./assets/icons/deepseek.svg"
+        },
+        {
+          "title": "NiceAIGC",
+          "description": "AIGC tools",
+          "url": "https://niceaigc.net/",
+          "icon": "https://niceaigc.net/favicon.ico"
         }
       ]
     }
