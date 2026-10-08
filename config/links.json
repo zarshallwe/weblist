@@ -57,12 +57,6 @@
           "icon": "./assets/icons/chatgpt.svg"
         },
         {
-          "title": "Codex",
-          "description": "Cloud analytics",
-          "url": "https://chatgpt.com/codex/cloud/settings/analytics",
-          "icon": "./assets/icons/codex.svg"
-        },
-        {
           "title": "DeepSeek",
           "description": "AI assistant",
           "url": "https://chat.deepseek.com/",
