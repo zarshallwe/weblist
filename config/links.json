@@ -63,6 +63,12 @@
           "icon": "./assets/icons/deepseek.svg"
         },
         {
+          "title": "Gemini",
+          "description": "Google AI assistant",
+          "url": "https://gemini.google.com/",
+          "icon": "./assets/icons/gemini.svg"
+        },
+        {
           "title": "NiceAIGC",
           "description": "AIGC tools",
           "url": "https://niceaigc.net/",
