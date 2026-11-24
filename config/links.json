@@ -81,9 +81,9 @@
       "items": [
         {
           "title": "同花顺",
-          "description": "Stock market & quotes",
+          "description": "Stock market",
           "url": "https://www.10jqka.com.cn/",
-          "icon": "./assets/icons/10jqka.png"
+          "icon": "./assets/icons/10jqka.svg"
         }
       ]
     }
